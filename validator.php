@@ -53,7 +53,7 @@ function checkData($tab)
             $model = '/^\+|00[0-9]{1,3}[0-9]{8,10}$/';
 
             if (preg_match($model, $value) == 0) {
-                $result[$key] = "Le format de l'email est incorrect !(ex +225 suivit de 8 à 10 chiffres)";
+                $result[$key] = "Le format du numéro est incorrect !(ex +225 suivit de 8 à 10 chiffres)";
             }
         }
     }
